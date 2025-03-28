@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VAI CORINTHIANS!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Página Inicial -->
+    <div id="pagina-inicial" class="pagina">
+        <h1 class="titulo-principal">VAI CORINTHIANS!</h1>
+        <button onclick="proximaPagina(1)" class="botao-nav">Próximo</button>
+    </div>
+
+    <!-- Segunda Página -->
+    <div id="pagina-2" class="pagina escondido">
+        <video id="video-principal" width="100%" height="auto" autoplay>
+            <source src="video1.mp4" type="video/mp4">
+        </video>
+        <h2 class="texto-destaque">CHUPA ANTIZADA!</h2>
+        <div class="botoes">
+            <button onclick="voltarPagina(0)" class="botao-nav">Voltar</button>
+            <button onclick="proximaPagina(2)" class="botao-nav">Próximo</button>
+        </div>
+    </div>
+
+    <!-- Terceira Página -->
+    <div id="pagina-3" class="pagina escondido">
+        <div class="galeria">
+            <div class="coluna">
+                <div class="item-galeria">
+                    <video controls>
+                        <source src="video3.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="item-galeria">
+                    <video controls>
+                        <source src="video2.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="coluna">
+                <div class="item-galeria">
+                    <img src="foto2.jpeg" alt="Foto 2">
+                </div>
+                <div class="item-galeria">
+                    <img src="foto1.jpeg" alt="Foto 1">
+                </div>
+            </div>
+        </div>
+        <div class="texto-personalizado">
+            <p>Aqui você pode colocar seu texto personalizado para zoar ainda mais!</p>
+        </div>
+        <div class="botoes">
+            <button onclick="voltarPagina(1)" class="botao-nav">Voltar</button>
+            <button onclick="irParaInicio()" class="botao-nav">Home</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
